@@ -4,45 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style/content-top-style.css" />
-  <link rel="stylesheet" href="/style/header-style.css" />
-  <link rel="stylesheet" href="/style/content-style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <title>movie-store</title>
 </head>
 
 <body>
-  <style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.mov-store-wrapper {
-    width: 100%;
-    min-height: 100vh;
-    height: auto;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.mov-store-container {
-    width: 1680px;
-    max-width: 100%;
-    height: auto;
-    min-height: 100vh;
-   
-}
-
-  </style>
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{color:#fff;font-family:Arial,Helvetica,sans-serif}.mov-store-wrapper{width:100%;min-height:100vh;height:auto;border:1px solid #000;display:flex;align-items:center;justify-content:center}.mov-store-container{width:1680px;max-width:100%;height:auto;min-height:100vh}.mov-store-header{min-width:100%;height:auto;display:flex;flex-direction:column;justify-content:flex-start;align-items:center}.header-top-desktop{width:100%;height:45px;display:flex;flex-direction:row;justify-content:space-between;align-items:center}.header-logo,.header-navigation,.header-user{display:flex;align-items:center;justify-content:space-around;width:33%}.header-user{justify-content:center}.header-content{width:100%;height:auto;background-image:url(../img/bg-header.jpg);background-repeat:no-repeat;background-size:cover;background-position:50% top;position:relative;display:flex;justify-content:center;align-items:center;aspect-ratio:1194/497}.header-content-img{width:96%;display:flex;justify-content:space-between;align-items:center}.header-footer1{position:absolute;bottom:0;background-color:#000;opacity:.4;width:100%;height:45px;z-index:1}.header-footer{position:absolute;bottom:0;width:100%;height:45px;display:flex;justify-content:space-between;align-items:center;z-index:2}.footer-movie-info,.footer-statistics{display:flex;align-items:center;justify-content:space-between;text-transform:uppercase;color:#fff}.footer-statistics{width:19%}.footer-statistics div{display:inline}.footer-statistics img{margin:0 6px 0 0;align-self:flex-end}.footer-movie-info{width:49%}.red{color:red}.footer-published{margin-left:5%}.footer-save{margin-right:15%}.header-top-mobile{display:none}.header-navigation img{width:15px;height:15px}@media(max-width:1300px){.footer-movie-info{width:59%}.header-content{width:100%;height:497px}}@media(max-width:1000px){.header-img-01{width:33%}.header-img-02{width:46%}.footer-movie-info{width:69%}.footer-statistics{width:29%}.header-content{background-position:14% top}}@media(max-width:900px){.header-footer{font-size:12px}}@media(max-width:767px){.header-top-desktop{display:none}.header-content{height:400px}.header-top-mobile{width:100%;display:flex;height:90px;flex-direction:column;justify-content:center;align-items:center}.top-mobile-top{width:95%;display:flex;justify-content:space-between}.header-navigation-mobile{width:95%;display:flex;justify-content:space-between}.header-navigation-mobile img{width:18px;height:18px}.header-footer,.header-footer1{flex-direction:column;justify-content:center;height:64px}.footer-movie-info,.footer-statistics{width:92%;height:50%;display:flex;align-items:center;justify-content:space-between}.footer-statistics{justify-content:flex-end}.footer-statistics div:nth-child(-n+2){margin-right:2%}.footer-img-star{width:46px}.footer-img{width:11px}.footer-save{margin-right:0}.footer-published{margin-left:0}}@media(max-width:580px){.header-content{height:340px;background-position:20% top}}@media(max-width:460px){.header-content{background-position:30% top}.header-footer{font-size:10px}}@media(max-width:365px){.header-content{height:280px}.header-footer{font-size:9px}}@media(max-width:317px){.header-logo-mobile-img-photo{display:none}.header-footer{font-size:8px}}@media(max-width:300px){.header-footer{font-size:6px}}.content-top,.contnet-wrapper,.top-search{display:flex;align-items:center;width:33%}.content-top{width:100%;height:45px;flex-direction:row;justify-content:center;color:#000}.contnet-wrapper{width:97%;flex-direction:row;justify-content:space-between}.top-featured{text-transform:uppercase}.top-newrealised{text-transform:capitalize}.top-search{width:23%;flex-direction:row;justify-content:space-between}.search-img img{width:20px;height:auto;margin-top:2px}.contnet-wrapper-mobile{display:none}@media(max-width:850px){.top-search{width:28%}}@media(max-width:767px){.content-top{height:64px;justify-content:center;align-items:center}.contnet-wrapper{display:none}.contnet-wrapper-mobile{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center}.content-wrapper-mob-01{width:94%;height:50%;display:flex;flex-direction:row;align-items:center;justify-content:space-between}.content-wrapper-mob-02{width:94%;height:50%;display:flex;align-items:center;justify-content:flex-end}.top-search{width:100%;justify-content:flex-end}.search-input{margin-right:2%}}@media(max-width:450px){.content-wrapper-mob-01{font-size:14px}.search-img{width:18px}}@media(max-width:390px){.content-wrapper-mob-01{font-size:12px}.search-img{width:15px}}@media(max-width:320px){.content-wrapper-mob-01{font-size:11px}}@media(max-width:300px){.content-wrapper-mob-01{font-size:10px}}.content-main{position:relative}.content-main-desktop{width:1680px;max-width:100%;height:870px;max-height:870px;display:flex;align-items:center;justify-content:space-between;flex-direction:row}.content-01,.content-02,.content-03{width:39%;height:100%;display:flex;align-items:center;flex-direction:column}.content-01{justify-content:space-between}.content-row-01,.content-row-02,.content-row-01-col-02,.content-r01c01-01,.content-r01c01-02,.content-c02-r01-01,.content-c02-r01-02,.content-02-row-02,.content-r02-01,.content-r02-02,.content-03-row-01,.content-03-row-02{border-radius:12px}.content-row-01,.content-row-02{width:100%;max-width:100%}.content-row-01{height:71%;display:flex;justify-content:space-between;align-items:center}.content-row-01-col-01,.content-row-01-col-02{width:49%}.content-row-01-col-01{height:100%;display:flex;flex-direction:column;justify-content:space-between;align-items:center}.content-r01c01-01,.content-r01c01-02{height:49%;width:100%}.content-r01c01-01,.content-r01c01-02,.content-row-01-col-02{background-repeat:no-repeat;background-size:cover}.content-r01c01-01{background-image:url(/img/guardians_of_the_galaxy.jpg);background-position:34% 44%}.content-r01c01-02{background-image:url(/img/the-first-avenger.jpg);background-position:34% 44%}.content-row-01-col-02{height:100%;background-image:url(/img/iron-man.jpg);background-position:34% 44%}.content-row-02{height:27%;background-image:url(/img/x-men.jpg);background-position:52% 0%}.content-02{justify-content:space-between}.content-02-row-01,.content-02-row-02,.content-02-row-03{width:100%}.content-02-row-01{height:31%}.content-02-row-01,.content-02-row-03{display:flex;justify-content:space-between;align-items:center}.content-c02-r01-01,.content-c02-r01-02{width:49%;height:100%}.content-c02-r01-01{background-image:url(/img/captain_america.jpg);background-position:9% 12%}.content-c02-r01-02{background-image:url(/img/spider_man2.jpg);background-position:21% 12%}.content-02-row-02{height:38%;background-image:url(/img/thor.jpg);background-position:50% 51%}.content-02-row-03{height:28%}.content-r02-01,.content-r02-02{width:49%;height:100%;background-repeat:no-repeat}.content-r02-01{background-image:url(/img/movie_box.jpg);background-size:contain}.content-r02-02{background-image:url(/img/spder-men.jpg);background-size:contain}.content-03{width:20%;justify-content:space-between}.content-03-row-01,.content-03-row-02{width:100%;background-repeat:no-repeat}.content-03-row-01{height:40%;background-image:url(/img/the_incredible_hulk.jpg);background-size:contain}.content-03-row-02{height:69%;background-image:url(/img/wolverine.jpg);background-position:39% 17%}.content-footer-wrapper,.content-footer,.footer-download,.footer-actions{display:flex;flex-direction:row;align-items:center}.content-main-footer{position:absolute;bottom:0;left:0;width:100%;height:45px;background-color:#000;opacity:.4}.content-footer-wrapper{position:absolute;justify-content:center;bottom:0;left:0;width:100%;height:45px;opacity:.4}.content-footer{width:95%;height:100%;justify-content:space-between}.footer-download,.footer-actions{width:25%;justify-content:space-between}.footer-actions{width:10%}.content-main-middle{display:none}.footer-download-mobile{display:none}@media(max-width:1550px){.content-main-desktop{display:none}.content-main-middle{width:1550px;max-width:100%;height:auto;display:flex;align-items:center;justify-content:space-around;flex-direction:column}.middle-col{width:100%;display:flex;flex-direction:row;align-items:center;justify-content:center;margin-top:30px}.middle-col-1{justify-content:space-between;margin-top:0}.middle-col-3,.middle-col-2,.middle-col-4{display:flex;align-items:center;justify-content:space-between}.middle-col-2 img:first-child{width:71%}.middle-col-2 img:last-child{width:27%}.middle-col-3 img{width:29%;max-height:auto}.middle-col-4 img:first-child{width:30%}.middle-col-4 img:last-child{width:64%}.middle-col-1-1,.middle-col-1-2,.middle-col-1-3{max-width:31%;width:472px;aspect-ratio:472/921;display:flex;justify-content:center}.middle-col-1-1{display:flex;flex-direction:column;align-items:center;justify-content:space-between}.middle-col-1-img{width:100%;border-radius:1%}.content-footer-wrapper{width:60%;justify-content:flex-start}.footer-download{width:50%}.footer-actions{width:23%}}@media(max-width:1300px){.content-footer{justify-content:space-around}.content-footer-wrapper{width:60%}.footer-download{width:55%}}@media(max-width:1150px){.content-footer-wrapper{width:70%;justify-content:flex-start}}@media(max-width:980px){.content-footer-wrapper{width:76%;justify-content:flex-start}}@media(max-width:900px){.content-footer{justify-content:space-around;font-size:13px}}@media(max-width:769px){.content-main-footer,.content-footer-wrapper{height:32px}.footer-download-desktop{display:none}.footer-download-mobile{display:inherit}.footer-download{width:26%}}@media(max-width:680px){.footer-download{width:36%}}@media(max-width:450px){.footer-download{width:46%}.footer-actions{width:30%}}@media(max-width:310px){.content-footer{font-size:12px}.content-footer img{width:12px}}</style>
 
   <div class="mov-store-wrapper">
     <main class="mov-store-container">
@@ -106,11 +73,13 @@ body {
             </div>
 
             <div class="footer-statistics">
-              <div class="footer-like"><img class="footer-img" src="./img/header-heart.png" /><span class="statistics-number">2,548</span>
+              <div class="footer-like"><img class="footer-img" src="./img/header-heart.png" /><span
+                  class="statistics-number">2,548</span>
               </div>
               <div class="footer-messenge"><img class="footer-img" src="./img/header-message.png" /><span
                   class="statistics-number">21</span></div>
-              <div class="footer-save"><img class="footer-img" src="./img/header-save.png" /><span class="statistics-number">564</span>
+              <div class="footer-save"><img class="footer-img" src="./img/header-save.png" /><span
+                  class="statistics-number">564</span>
               </div>
             </div>
 
@@ -161,14 +130,14 @@ body {
         <div class="content-main-desktop">
           <div class="content-01">
             <div class="content-row-01">
-  
+
               <div class="content-row-01-col-01">
                 <div class="content-r01c01-01"></div>
                 <div class="content-r01c01-02"></div>
               </div>
-  
+
               <div class="content-row-01-col-02"></div>
-  
+
             </div>
             <div class="content-row-02"></div>
           </div>
@@ -194,10 +163,10 @@ body {
               <img class="middle-col-1-img" src="./img/iron-man.jpg" />
             </div>
             <div class="middle-col-1-1">
-              <img class="middle-col-1-img" src="./img/guardians_of_the_galaxy.jpg"/>
-              <img class="middle-col-1-img" src="./img/the-first-avenger.jpg"/>
+              <img class="middle-col-1-img" src="./img/guardians_of_the_galaxy.jpg" />
+              <img class="middle-col-1-img" src="./img/the-first-avenger.jpg" />
             </div>
-          
+
             <div class="middle-col-1-3">
               <img class="middle-col-1-img" src="./img/wolverine.jpg" />
             </div>
@@ -215,10 +184,10 @@ body {
             <img class="middle-col-1-img" src="./img/x-men.jpg" />
             <img class="middle-col-1-img" src="./img/the_incredible_hulk.jpg" />
           </div>
-         
-        
+
+
         </div>
-        
+
         <div class="content-main-footer"></div>
         <div class="content-footer-wrapper">
           <div class="content-footer">
